@@ -1,0 +1,30 @@
+@use 'variables';
+
+.hero{
+    background-color: variables.$pink;
+
+    &__date {
+        font-family: Sunwish Maverick, sans-serif;
+        font-size: 32px;
+        color: variables.$beige;
+    }
+
+    &__place {
+        max-width: 518px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: variables.$beige;
+        
+        
+        &__spark {
+            height: 100%;
+        }
+
+        &__content {
+            font-family: Amarante, serif;
+            font-size: 28px;
+            padding: 12px 24px;
+        }
+    }
+}

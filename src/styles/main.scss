@@ -1,3 +1,18 @@
+@use 'variables';
+@use 'hero';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Sunwish Maverick;
+    src: url(../../assets/fonts/SunwishmaverickRegular-Rpzne.otf);
+    font-weight: 400;
+}
+
 body {
-    background-color: cyan;
+    background-color: variables.$beige;
 }

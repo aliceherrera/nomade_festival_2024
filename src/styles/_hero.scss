@@ -2,29 +2,90 @@
 
 .hero{
     background-color: variables.$pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__date {
+        margin-top: 80px;
+        margin-bottom: 16px;
         font-family: Sunwish Maverick, sans-serif;
         font-size: 32px;
         color: variables.$beige;
     }
 
     &__place {
-        max-width: 518px;
-        display: flex;
+        display: inline-flex;
         justify-content: center;
         align-items: center;
         background-color: variables.$beige;
-        
+        border-radius: 50px;
+        border: 2px solid variables.$green;
+        z-index: 90;
         
         &__spark {
             height: 100%;
+            padding: 0 24px;
         }
 
         &__content {
             font-family: Amarante, serif;
             font-size: 28px;
-            padding: 12px 24px;
+            color: variables.$green;
+            padding: 12px 0;
+        }
+    }
+
+    &__logo {
+        z-index: 100;
+    }
+
+    &__time {
+        font-family: Sunwish Maverick, sans-serif;
+        font-size: 60px;
+        color: variables.$beige;
+        margin-bottom: 28px;
+        z-index: 90;
+
+        &__spark {
+            padding: 0 24px;
+        }
+    }
+
+    &__button {
+        background-color: variables.$yellow;
+        border-radius: 50px;
+        padding: 20px 80px 10px;
+        margin-bottom: 60px;
+        border: 2px solid variables.$green;
+
+        &:hover {
+            background-color: variables.$beige;
+        }
+
+        &__text{
+            padding-top: 16px;
+            font-family: Sunwish Maverick, sans-serif;
+            font-size: 32px;
+            text-decoration: none;
+            color: variables.$green;
+        }
+    }
+
+    &__bg-item {
+        &__sol-left {
+            height: 400px;
+            position: absolute;
+            left: 0;
+            top: 580px;
+
+        }
+        &__sol-right {
+            height: 400px;
+            position: absolute;
+            right: 0;
+            top: 50px;
+            transform: rotate(180deg);
         }
     }
 }

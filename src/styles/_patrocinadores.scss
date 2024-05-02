@@ -1,0 +1,13 @@
+.patrocinadores {
+    align-items: center;
+    width: 100%;
+    max-width: 1124px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 40px;
+
+    &__logo-evento {
+        margin: 60px 0 40px;
+    }
+}

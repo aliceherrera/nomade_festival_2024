@@ -1,6 +1,99 @@
+@use 'variables';
+
 .lineup {
-    &__faixa__item{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__container {
+        max-width: 1124;
         width: 100%;
-        height: 36px;
+    }
+
+    &__title {
+        font-family: Sunwish Maverick, sans-serif;
+        font-size: 60px;
+        color: variables.$green;
+        margin: 80px auto;
+        text-align: center;
+    }
+
+    &__moldura {
+        position: relative;
+
+        &__bg1 {
+            width: 100%;
+            margin: auto;
+            position: absolute;
+            z-index: -1;
+
+            &__title {
+                z-index: 100;
+                position: absolute;
+                font-family: Sunwish Maverick, sans-serif;
+                font-size: 80px;
+                color: variables.$beige;
+                left:0;
+                right:0;
+                top: 24px;
+                margin-left:auto;
+                margin-right:auto;
+                text-align: center;
+
+            }
+
+            &__shows {
+                padding-top: 122px;
+
+                &__artist {
+                    margin: 0 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 2px solid variables.$green;
+
+                    &--is-alone {
+                        justify-content: center;
+                    }
+                    
+                    &__name{
+                        border: 2px solid variables.$green;
+                        border-top: 0;
+                        border-bottom: 0;
+                        font-family: Eczar, sans-serif;
+                        font-size: 60px;
+                        color: variables.$beige;
+                        text-shadow: -4px 4px variables.$green;
+                        background-color: variables.$orange;
+                        padding: 0 80px;
+                    }
+                }
+            }
+        }
+
+         &__bg2 {
+            width: 100%;
+            height: 450px;
+            margin: auto;
+            position: absolute;
+            top: 447px;
+            object-fit: cover;
+            object-position: top;
+            z-index: -1;
+
+            &__title {
+                z-index: 100;
+                position: absolute;
+                font-family: Sunwish Maverick, sans-serif;
+                font-size: 80px;
+                color: variables.$beige;
+                left:0;
+                right:0;
+                top: 475px;
+                margin-left:auto;
+                margin-right:auto;
+                text-align: center;
+            }
+        }
     }
 }

@@ -26,6 +26,11 @@
         &__spark {
             height: 100%;
             padding: 0 24px;
+
+            @media (max-width: 640px){
+                height: 16px;
+                padding: 0 8px;
+            }
         }
 
         &__content {
@@ -33,11 +38,22 @@
             font-size: 28px;
             color: variables.$green;
             padding: 12px 0;
+
+            @media (max-width: 640px){
+                font-size: 18px;
+                text-align: center;
+            }
         }
     }
 
     &__logo {
         z-index: 100;
+        
+        @media (max-width: 640px){
+            img{
+                width: 320px;
+            }
+        }
     }
 
     &__time {
@@ -59,6 +75,10 @@
         margin-bottom: 60px;
         border: 2px solid variables.$green;
 
+        @media (max-width: 640px){
+            padding: 20px 40px 10px;
+        }
+
         &:hover {
             background-color: variables.$beige;
         }
@@ -69,10 +89,18 @@
             font-size: 32px;
             text-decoration: none;
             color: variables.$green;
+            
+            @media (max-width: 640px){
+                font-size: 24px;
+            }
         }
     }
 
     &__bg-item {
+
+        @media (max-width: 640px){
+            display: none;
+        }
         &__sol-left {
             height: 400px;
             position: absolute;
@@ -86,6 +114,19 @@
             right: 0;
             top: 50px;
             transform: rotate(180deg);
+        }
+    }
+
+    @media (max-width: 640px){
+        &__time {
+            font-size: 24px;
+            margin-bottom: 28px;
+            z-index: 90;
+    
+            &__spark {
+                height: 20px;
+                padding: 0 8px;
+            }
         }
     }
 }

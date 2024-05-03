@@ -17,6 +17,11 @@
         color: variables.$green;
         margin: 80px auto;
         text-align: center;
+
+        @media (max-width: 640px) {
+            font-size: 20px;
+            margin: 24px auto;
+        }
     }
 
     &__moldura {
@@ -27,6 +32,10 @@
             margin: auto;
             position: absolute;
             z-index: -1;
+
+            @media (max-width: 640px) {
+                display: none;
+            }
 
             &__title {
                 z-index: 100;
@@ -41,10 +50,21 @@
                 margin-right:auto;
                 text-align: center;
 
+                @media (max-width: 640px) {
+                    position: inherit;
+                    color: variables.$green;
+                    top: 0;
+                    font-size: 40px;
+                }
+
             }
 
             &__shows {
                 padding-top: 122px;
+
+                @media (max-width: 640px) {
+                    padding-top: 12px;
+                }
 
                 &__artist {
                     margin: 0 20px;
@@ -54,6 +74,12 @@
 
                     &--is-alone {
                         justify-content: center;
+                    }
+
+                    @media (max-width: 640px) {
+                        display: block;
+                        border: none;
+                        margin: auto 4px;
                     }
                     
                     &__name{
@@ -66,6 +92,12 @@
                         text-shadow: -3px 3px 0px variables.$green, 0 1px variables.$green, 1px 0 variables.$green, 0 -1px variables.$green;;
                         background-color: variables.$orange;
                         padding: 0 80px;
+
+                        @media (max-width: 640px){
+                            font-size: 24px;
+                            border: 2px solid variables.$green;
+                            padding: 0 40px;
+                        }
                     }
                 }
             }
@@ -81,6 +113,10 @@
             object-position: top;
             z-index: -1;
 
+            @media (max-width: 640px) {
+                display: none;
+            }
+
             &__title {
                 z-index: 100;
                 position: absolute;
@@ -93,7 +129,34 @@
                 margin-left:auto;
                 margin-right:auto;
                 text-align: center;
+
+                @media (max-width: 640px) {
+                    position: inherit;
+                    color: variables.$green;
+                    top: 0;
+                    font-size: 40px;
+                    padding-top: 24px;
+                }
             }
         }
     }
+
+    // @media (max-width: 640px) {
+        
+    //     display: block;
+    //     background-color: red;
+    //     &__container {
+    //         width: 90%;
+    //     }
+
+    //     &__lineup__moldura__bg1__shows__artist{
+    //         display: flex;
+    //         flex-direction: column;
+            
+    //         &__name{
+    //             font-size: 12px;
+    //         }
+    //     }
+        
+    // }
 }

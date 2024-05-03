@@ -13,7 +13,7 @@
 
     &__title {
         font-family: Sunwish Maverick, sans-serif;
-        font-size: 60px;
+        font-size: 40px;
         color: variables.$green;
         margin: 80px auto;
         text-align: center;
@@ -32,11 +32,11 @@
                 z-index: 100;
                 position: absolute;
                 font-family: Sunwish Maverick, sans-serif;
-                font-size: 80px;
+                font-size: 60px;
                 color: variables.$beige;
                 left:0;
                 right:0;
-                top: 24px;
+                top: 36px;
                 margin-left:auto;
                 margin-right:auto;
                 text-align: center;
@@ -61,9 +61,9 @@
                         border-top: 0;
                         border-bottom: 0;
                         font-family: Eczar, sans-serif;
-                        font-size: 60px;
+                        font-size: 40px;
                         color: variables.$beige;
-                        text-shadow: -4px 4px variables.$green;
+                        text-shadow: -3px 3px 0px variables.$green, 0 1px variables.$green, 1px 0 variables.$green, 0 -1px variables.$green;;
                         background-color: variables.$orange;
                         padding: 0 80px;
                     }
@@ -76,7 +76,7 @@
             height: 450px;
             margin: auto;
             position: absolute;
-            top: 447px;
+            top: 339px;
             object-fit: cover;
             object-position: top;
             z-index: -1;
@@ -85,11 +85,11 @@
                 z-index: 100;
                 position: absolute;
                 font-family: Sunwish Maverick, sans-serif;
-                font-size: 80px;
+                font-size: 60px;
                 color: variables.$beige;
                 left:0;
                 right:0;
-                top: 475px;
+                top: 374px;
                 margin-left:auto;
                 margin-right:auto;
                 text-align: center;
